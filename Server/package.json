@@ -11,10 +11,14 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@langchain/core": "^0.3.76",
     "@langchain/groq": "^0.2.4",
     "@langchain/langgraph": "^0.4.9",
     "cors": "^2.8.5",
     "dotenv": "^17.2.2",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "googleapis": "^160.0.0",
+    "readline-sync": "^1.4.10",
+    "zod": "^3.25.76"
   }
 }

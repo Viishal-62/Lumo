@@ -3,10 +3,12 @@ console.log("🚀 Welcome to Lumo AI Backend");
 import express from "express";
 import { configDotenv } from "dotenv";
 import cors from "cors";
+import { ENV } from "./Config/envConfig.js";
+import googleAuth from "./routes/Auth.routes.js"
 
 configDotenv();
 
-const PORT = process.env.PORT || 5000;
+const PORT = ENV.PORT || 5000;
 const app = express();
 
 // Enable CORS
@@ -17,6 +19,9 @@ app.use(cors({
 
 // Enable JSON parsing for all routes
 app.use(express.json({ limit: "10mb" }));
+
+app.use("/api" , googleAuth)
+ 
 
 // Example health check route
 app.get("/health", (req, res) => {
