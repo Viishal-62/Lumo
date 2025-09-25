@@ -21,7 +21,7 @@ const app = express();
 // ✅ Enable CORS (allows requests from frontend & sends cookies)
 app.use(
   cors({
-    origin: "http://localhost:5173", // Frontend URL (Vite default)
+    origin: "https://lumo-opal.vercel.app", // Frontend URL (Vite default)
     credentials: true, // Required for sending cookies with requests
   })
 );
