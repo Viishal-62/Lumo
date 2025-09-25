@@ -1,7 +1,7 @@
 import {tool} from "@langchain/core/tools"
 import { google } from "googleapis"
 import { oauth2Client } from "../controllers/Auth.js";
-import tokens from "../../tokens.json" with { type: "json" };
+ 
 import puppeteer from "puppeteer";
 import { generateHtml } from "../Templates/StyleOne.js";
 import cloudinary from "./Cloudinary.js"; 
@@ -11,33 +11,8 @@ import { strict } from "assert";
 
 
 
-// tavily for web search
-
-
-
-// oauth2Client.setCredentials(tokens)
-
-
-
-let calendar = google.calendar({
-    version : "v3",
-    auth : oauth2Client,
-});
-
-let excelsheet = google.sheets({
-  version : "v4",
-  auth : oauth2Client,
-})
-
-let emails = google.gmail({
-  version : "v1",
-  auth : oauth2Client
-})
-
-let youtube = google.youtube({
-  version : "v3",
-  auth : oauth2Client
-})
+ 
+ 
 
 
 
