@@ -6,9 +6,11 @@ import crypto from "crypto"
 
 let sessionId = Math.random().toString(36).substring(2);
 
+let switchBetween = window.location.href.includes("localhost") ? "http://localhost:3000" : "https://lumo-1-pw6m.onrender.com";
+
 let axiosInstance = axios.create({
-  baseURL: "http://localhost:5000",
-  withCredentials: true, // to send/receive cookies
+  baseURL: switchBetween,
+  withCredentials: true,  
 });
 
 export const useAuthStore = create((set) => ({
