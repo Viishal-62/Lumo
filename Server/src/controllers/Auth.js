@@ -100,7 +100,7 @@ export const callBack = async (req, res) => {
     createJWT_Token(user.email, res);
 
 
-    res.redirect("http://localhost:5173/chat");
+    res.redirect("https://lumo-opal.vercel.app/chat");
   
   } catch (error) {
     console.error("❌ Error in callback:", error);
