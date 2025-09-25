@@ -1,6 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
- 
- 
 
 const Mic = (props) => (
   <svg
@@ -225,7 +223,6 @@ export default function HomePage() {
   const [scrolled, setScrolled] = useState(false);
   const [bgOffset, setBgOffset] = useState(0);
 
-
   const workflowsRef = useRef(null);
   const workflowsVisible = useOnScreen(workflowsRef);
 
@@ -297,7 +294,6 @@ export default function HomePage() {
 
   return (
     <div className="bg-black text-slate-300 font-sans antialiased">
-    
       <div
         className="absolute inset-0 bg-grid-slate-900/[0.04] [mask-image:linear-gradient(to_bottom,white_10%,transparent_100%)]"
         style={{ backgroundPosition: `0 ${bgOffset}px` }}
@@ -317,7 +313,8 @@ export default function HomePage() {
           <button
             className="bg-violet-600 hover:bg-violet-500 text-white font-bold py-2 px-5 rounded-lg transition-colors shadow-lg shadow-violet-500/10 text-sm transform hover:scale-105"
             onClick={() =>
-              (window.location.href = "http://localhost:5000/api/auth")
+              (window.location.href =
+                "https://lumo-1-pw6m.onrender.com/api/auth")
             }
           >
             Request Access
