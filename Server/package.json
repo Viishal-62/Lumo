@@ -4,7 +4,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "toolcall": "node src/config/graph.js"
   },
   "keywords": [],
   "author": "",
@@ -12,13 +13,21 @@
   "description": "",
   "dependencies": {
     "@langchain/core": "^0.3.76",
+    "@langchain/google-genai": "^0.2.18",
     "@langchain/groq": "^0.2.4",
     "@langchain/langgraph": "^0.4.9",
+    "@langchain/tavily": "^0.1.5",
+    "cloudinary": "^2.7.0",
+    "cookie-parser": "^1.4.7",
     "cors": "^2.8.5",
     "dotenv": "^17.2.2",
     "express": "^5.1.0",
     "googleapis": "^160.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.18.1",
+    "puppeteer": "^24.22.0",
     "readline-sync": "^1.4.10",
+    "socket.io": "^4.8.1",
     "zod": "^3.25.76"
   }
 }
