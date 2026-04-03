@@ -7,8 +7,7 @@ import cookieParser from "cookie-parser";
 import { ENV } from "./src/Config/envConfig.js";
 import { connectDB } from "./src/Config/Database.js";
 import googleAuth from "./src/routes/Auth.routes.js";
-
-// ✅ Load environment variables from .env
+ 
 configDotenv();
 
 const PORT = ENV.PORT || 5000;
